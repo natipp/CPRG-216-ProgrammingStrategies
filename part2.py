@@ -21,3 +21,99 @@ count = 0
 all_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 user_entry = int(input(""))
+
+while(True):
+    if(user_entry == 0):
+        print("\nProgram End!")
+        break
+    elif(user_entry == 1):
+        if(week_days == ""):
+            week_days = input("\nEnter a specific day [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]\n\n")
+            print("\nFor " + week_days.title())
+        else:
+            product_number = int(input("\nEnter product number 1-5, or 0 to stop:\n\n"))
+            if(product_number == 0):
+                break
+            elif(product_number not in range(0,6)):
+                print("Invalid input, please enter a valid number\n")
+                continue
+            quantity_sold = int(input("\nEnter quantity sold:\n\n"))
+            total_profits += (quantity_sold * profit_margins[product_number])
+    
+    elif(user_entry == 2):
+        if(count < 7):
+            print(f"\nFor {all_week[count].title()}")
+        if(count == 7):
+            print(f"\nYour total profit for the week is: ${total_profits:.2f}\n")
+            if(total_profits >= 10000):
+                print("You did good this week")
+            else:
+                print(f"More hard work needed... The last week wasn't the best")
+            break
+        product_number = int(input("\nEnter product number 1-5, or 0 to stop:\n\n"))
+        if(product_number == 0):
+            count += 1
+            continue
+        elif(product_number not in range(0,6)):
+            print("Invalid input, please enter a valid number\n")
+            continue
+
+        quantity_sold = int(input("\nEnter quantity sold:\n\n"))
+        total_profits += (quantity_sold * profit_margins[product_number])
+        count += 1
+    
+    elif(user_entry == 3):
+        if(count < 5):
+            print(f"\nFor {all_week[count]}")
+        if(count == 5):
+            print(f"\nYour total profit for the week (business days) is: ${total_profits:.2f}\n")
+            if(total_profits >= 10000):
+                print("You did good this week (business days)")
+            else:
+                print(f"More hard work needed... The last week (business days) wasn't the best")
+            break
+        product_number = int(input("\nEnter product number 1-5, or 0 to stop:\n\n"))
+        if(product_number == 0):
+            count += 1
+            continue
+        elif(product_number not in range(0,6)):
+            print("\nInvalid input, please enter a valid number\n")
+            continue
+
+        quantity_sold = int(input("\nEnter quantity sold:\n\n"))
+        total_profits += (quantity_sold * profit_margins[product_number])
+        count += 1
+    
+
+    elif(user_entry == 4):
+        if(count < 2):
+            print(f"\nFor {all_week[count+5]}")
+        if((count + 5) == 7):
+            print(f"\nYour total profit for the weekend is: ${total_profits:.2f}\n")
+            if(total_profits >= 10000):
+                print("You did good this weekend")
+            else:
+                print(f"More hard work needed... The last weekend wasn't the best")
+            break
+        product_number = int(input("\nEnter product number 1-5, or 0 to stop:\n\n"))
+        if(product_number == 0):
+            count += 1
+            continue
+        elif(product_number not in range(0,6)):
+            print("\nInvalid input, please enter a valid number\n")
+            continue
+
+        quantity_sold = int(input("\nEnter quantity sold:\n\n"))
+        total_profits += (quantity_sold * profit_margins[product_number])
+        count += 1
+
+    else:
+        print("\nInvalid input, please enter a valid number\n")
+        break
+
+if(user_entry == 1):
+    print(f"\nYour total profit for {week_days.title()} is: ${total_profits:.2f}\n")
+    if(total_profits >= 10000):
+        print(f"You did good this {week_days.title()}")
+    else:
+        print(f"More hard work needed... The last {week_days.title()} wasn't the best")
