@@ -1,3 +1,7 @@
+#Name: Jubril Somide
+#Date: March 18th 2023
+#This program is to create an application that automatically calculated Circle Phones' total profit
+#for one-day period
 profit_margins = {1: 120.45,
                   2: 99.50,
                   3: 75.69,
