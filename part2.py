@@ -392,3 +392,312 @@ while True:
         else:
             print(
                 f"More hard work needed... The last week wasn't the best")
+
+    elif choice == 3:
+        # Reset the profit accumulator
+        profit = 0.0
+
+        # Loop through the days for the work week
+        print("For Monday")
+        while True:
+            # Get the product number
+            product_number = int(
+                input("Enter product number 1-5, or enter 0 to stop:\n"))
+
+            # Check if the user wants to stop
+            if product_number == 0:
+                break
+
+            # Validate the product number
+            if product_number not in valid_product_numbers:
+                print("Invalid input, please enter a valid number")
+                continue
+
+            else:
+                # Get the quantity sold
+                quantity_sold = int(input("Enter quantity sold:\n"))
+
+                # Calculate the profit
+                # 1 - Apple iPhone
+                if product_number == 1:
+                    profit += quantity_sold * APPLE_IPHONE
+
+                # 2 - Android Phone
+                elif product_number == 2:
+                    profit += quantity_sold * ANDROID_PHONE
+
+                # 3 - Apple Tablet
+                elif product_number == 3:
+                    profit += quantity_sold * APPLE_TABLET
+
+                # 4 - Android Tablet
+                elif product_number == 4:
+                    profit += quantity_sold * ANDROID_TABLET
+
+                # 5 - Windows Tablet
+                elif product_number == 5:
+                    profit += quantity_sold * WINDOWS_TABLET
+
+        print("For Tuesday")
+        while True:
+            # Get the product number
+            product_number = int(
+                input("Enter product number 1-5, or enter 0 to stop:\n"))
+
+            # Check if the user wants to stop
+            if product_number == 0:
+                break
+
+            # Validate the product number
+            if product_number not in valid_product_numbers:
+                print("Invalid input, please enter a valid number")
+                continue
+
+            else:
+                # Get the quantity sold
+                quantity_sold = int(input("Enter quantity sold:\n"))
+
+                # Calculate the profit
+                # 1 - Apple iPhone
+                if product_number == 1:
+                    profit += quantity_sold * APPLE_IPHONE
+
+                # 2 - Android Phone
+                elif product_number == 2:
+                    profit += quantity_sold * ANDROID_PHONE
+
+                # 3 - Apple Tablet
+                elif product_number == 3:
+                    profit += quantity_sold * APPLE_TABLET
+
+                # 4 - Android Tablet
+                elif product_number == 4:
+                    profit += quantity_sold * ANDROID_TABLET
+
+                # 5 - Windows Tablet
+                elif product_number == 5:
+                    profit += quantity_sold * WINDOWS_TABLET
+
+        print("For Wednesday")
+        while True:
+            # Get the product number
+            product_number = int(
+                input("Enter product number 1-5, or enter 0 to stop:\n"))
+
+            # Check if the user wants to stop
+            if product_number == 0:
+                break
+
+            # Validate the product number
+            if product_number not in valid_product_numbers:
+                print("Invalid input, please enter a valid number")
+                continue
+
+            else:
+                # Get the quantity sold
+                quantity_sold = int(input("Enter quantity sold:\n"))
+
+                # Calculate the profit
+                # 1 - Apple iPhone
+                if product_number == 1:
+                    profit += quantity_sold * APPLE_IPHONE
+
+                # 2 - Android Phone
+                elif product_number == 2:
+                    profit += quantity_sold * ANDROID_PHONE
+
+                # 3 - Apple Tablet
+                elif product_number == 3:
+                    profit += quantity_sold * APPLE_TABLET
+
+                # 4 - Android Tablet
+                elif product_number == 4:
+                    profit += quantity_sold * ANDROID_TABLET
+
+                # 5 - Windows Tablet
+                elif product_number == 5:
+                    profit += quantity_sold * WINDOWS_TABLET
+
+        print("For Thursday")
+        while True:
+            # Get the product number
+            product_number = int(
+                input("Enter product number 1-5, or enter 0 to stop:\n"))
+
+            # Check if the user wants to stop
+            if product_number == 0:
+                break
+
+            # Validate the product number
+            if product_number not in valid_product_numbers:
+                print("Invalid input, please enter a valid number")
+                continue
+
+            else:
+                # Get the quantity sold
+                quantity_sold = int(input("Enter quantity sold:\n"))
+
+                # Calculate the profit
+                # 1 - Apple iPhone
+                if product_number == 1:
+                    profit += quantity_sold * APPLE_IPHONE
+
+                # 2 - Android Phone
+                elif product_number == 2:
+                    profit += quantity_sold * ANDROID_PHONE
+
+                # 3 - Apple Tablet
+                elif product_number == 3:
+                    profit += quantity_sold * APPLE_TABLET
+
+                # 4 - Android Tablet
+                elif product_number == 4:
+                    profit += quantity_sold * ANDROID_TABLET
+
+                # 5 - Windows Tablet
+                elif product_number == 5:
+                    profit += quantity_sold * WINDOWS_TABLET
+
+        print("For Friday")
+        while True:
+            # Get the product number
+            product_number = int(
+                input("Enter product number 1-5, or enter 0 to stop:\n"))
+
+            # Check if the user wants to stop
+            if product_number == 0:
+                break
+
+            # Validate the product number
+            if product_number not in valid_product_numbers:
+                print("Invalid input, please enter a valid number")
+                continue
+
+            else:
+                # Get the quantity sold
+                quantity_sold = int(input("Enter quantity sold:\n"))
+
+                # Calculate the profit
+                # 1 - Apple iPhone
+                if product_number == 1:
+                    profit += quantity_sold * APPLE_IPHONE
+
+                # 2 - Android Phone
+                elif product_number == 2:
+                    profit += quantity_sold * ANDROID_PHONE
+
+                # 3 - Apple Tablet
+                elif product_number == 3:
+                    profit += quantity_sold * APPLE_TABLET
+
+                # 4 - Android Tablet
+                elif product_number == 4:
+                    profit += quantity_sold * ANDROID_TABLET
+
+                # 5 - Windows Tablet
+                elif product_number == 5:
+                    profit += quantity_sold * WINDOWS_TABLET
+
+        # Display the profit
+        print(f"Total profit for the week (business days) is: ${profit:.2f}")
+
+        # Customized comment
+        if profit >= 10000:
+            print("You did good this week (business days)")
+        else:
+            print(
+                f"More hard work needed... The last week (business days) wasn't the best")
+
+    elif choice == 4:
+        # Reset the profit accumulator
+        profit = 0.0
+
+        print("For Saturday")
+        while True:
+            # Get the product number
+            product_number = int(
+                input("Enter product number 1-5, or enter 0 to stop:\n"))
+
+            # Check if the user wants to stop
+            if product_number == 0:
+                break
+
+            # Validate the product number
+            if product_number not in valid_product_numbers:
+                print("Invalid input, please enter a valid number")
+                continue
+
+            else:
+                # Get the quantity sold
+                quantity_sold = int(input("Enter quantity sold:\n"))
+
+                # Calculate the profit
+                # 1 - Apple iPhone
+                if product_number == 1:
+                    profit += quantity_sold * APPLE_IPHONE
+
+                # 2 - Android Phone
+                elif product_number == 2:
+                    profit += quantity_sold * ANDROID_PHONE
+
+                # 3 - Apple Tablet
+                elif product_number == 3:
+                    profit += quantity_sold * APPLE_TABLET
+
+                # 4 - Android Tablet
+                elif product_number == 4:
+                    profit += quantity_sold * ANDROID_TABLET
+
+                # 5 - Windows Tablet
+                elif product_number == 5:
+                    profit += quantity_sold * WINDOWS_TABLET
+
+        print("For Sunday")
+        while True:
+            # Get the product number
+            product_number = int(
+                input("Enter product number 1-5, or enter 0 to stop:\n"))
+
+            # Check if the user wants to stop
+            if product_number == 0:
+                break
+
+            # Validate the product number
+            if product_number not in valid_product_numbers:
+                print("Invalid input, please enter a valid number")
+                continue
+
+            else:
+                # Get the quantity sold
+                quantity_sold = int(input("Enter quantity sold:\n"))
+
+                # Calculate the profit
+                # 1 - Apple iPhone
+                if product_number == 1:
+                    profit += quantity_sold * APPLE_IPHONE
+
+                # 2 - Android Phone
+                elif product_number == 2:
+                    profit += quantity_sold * ANDROID_PHONE
+
+                # 3 - Apple Tablet
+                elif product_number == 3:
+                    profit += quantity_sold * APPLE_TABLET
+
+                # 4 - Android Tablet
+                elif product_number == 4:
+                    profit += quantity_sold * ANDROID_TABLET
+
+                # 5 - Windows Tablet
+                elif product_number == 5:
+                    profit += quantity_sold * WINDOWS_TABLET
+
+        # Display the profit
+        print(f"Total profit for the weekend is: ${profit:.2f}")
+
+        # Customized comment
+        if profit >= 10000:
+            print("You did good this weekend")
+        else:
+            print(
+                f"More hard work needed... The last weekend wasn't the best")
