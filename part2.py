@@ -1,5 +1,5 @@
 """
-Group Members: Nathalia Pinzon, Anna Ruan, Jubril Somid
+Group Members: Nathalia Pinzon, Anna Ruan, Jubril Somide
 
 Date: 19-Mar-2023
 
