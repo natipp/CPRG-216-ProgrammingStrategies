@@ -1,3 +1,31 @@
+"""
+Group Members: Nathalia Pinzon, Anna Ruan, Jubril Somid
+
+Date: 19-Mar-2023
+
+Program Description:
+This program can be used to calculate the profits of Circle Phones for a given time period. 
+
+It is capable of calculating profits for the followign time periods:
+    - One day
+    - One weeek
+    - One work week
+    - One weekend
+
+Inputs:
+    - Time period to be calculated
+    - Product number
+    - Quantity for each product
+
+Processing:
+    - The total profits for the given time periods are calculated based on the prices defined on the dictionary.
+    - The program runs in a loop until the user specifies that they wish to exit.
+
+Outputs:
+    - The total profit for the given time period, with a descriptive message.
+    = A message (congratulating or encouraging) that reflects the performance for period
+"""
+
 # Define the profit margins for each product in a dictionary
 profit_margins = {1: 120.45,
                   2: 99.50,
