@@ -14,7 +14,7 @@ count = 0
 
 # Define a list of all the days of the week
 all_week = ["Monday", "Tuesday", "Wednesday",
-            "Thursday", "Friaaday", "Saturday", "Sunday"]
+            "Thursday", "Friday", "Saturday", "Sunday"]
 
 # Display welcome message to the user
 print("Welcome to Circle Phones' Profit calculator. You can calculate your profits for a specific day, by\nweek or you can divide the week into weekdays and the weekend.\n")
@@ -117,7 +117,6 @@ while (True):
 
             # If user chooses to calculate profits for the business days of the week
             elif (user_entry == 3):
-                print(count)
 
                 # Print a message for the respective day of the week
                 if (count < 5):
