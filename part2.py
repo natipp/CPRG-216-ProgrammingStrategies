@@ -50,7 +50,7 @@ while(True):
                     if(total_profits >= 10000):
                         print("You did good this week")
                     else:
-                        print(f"More hard work needed... The last week wasn't the best")
+                        print("More hard work needed... The last week wasn't the best")
                     break
                 product_number = int(input("\nEnter product number 1-5, or 0 to stop:\n\n"))
                 if(product_number == 0):
